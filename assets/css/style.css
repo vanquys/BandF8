@@ -1,0 +1,305 @@
+*{
+	padding: 0;
+	box-sizing: border-box;
+	margin: 0;
+}
+html{
+	font-family:helvetiva, arial, sans-serif;
+}
+/*
+1 ngoài vào
+2 trên xuống
+3 tổng quan dến chi tiết
+*/
+/*
+1 vị trí
+2 kích thước (width, height)
+3 màu 
+4 kiểu dáng
+*/
+#header{
+	height: 46px;
+	background-color: #000;
+	position: fixed; 
+	top: 0;
+	left: 0;
+	right: 0;
+}	
+
+#nav{
+	display: inline-block;
+}
+
+#nav, .subnav {
+	list-style: none;
+}
+
+#nav > .nav-arrow-down {
+	font-size: 14px; 
+}
+
+#nav > li{
+	display: inline-block;
+}
+
+#header > .seach-btn{
+	float: right;
+	color: white;
+	font-size: 22px;
+	line-height: 46px;
+	padding: 0 19px;
+	box-sizing: border-box; 
+}
+
+#header > .seach-btn:hover{
+	background-color: red;
+	cursor: help;
+}
+#header > .seach-btn:focus{
+	background-color: blue;
+}
+
+#nav li{  
+	position: relative;
+}	
+
+#nav > li > a{
+	color: #fff;
+	text-transform: uppercase;
+}
+
+#nav li a{
+	text-decoration: none;
+	line-height: 46px;
+	padding:0 24px;
+	display: block;
+}
+
+#nav li:hover .subnav {
+		display: block; 
+}
+
+#nav .subnav li:hover a,
+#nav > li:hover > a{
+	color: #000;
+	background-color: #ccc;	
+}
+#nav .subnav{
+	display: none;
+	position: absolute;
+	background-color: #fff;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+#nav .subnav a{
+	color: #000;
+	line-height: 38px;
+	padding: 0 16px;
+}
+
+#slider{
+	}
+#slider > #content > img{
+	width: 100%;
+}
+#text{
+	color: #fff;
+	position: relative;
+	text-align:center;
+	top: -100px;
+	display:inline;
+
+}		
+#content{
+	
+}
+.title{
+	padding: 10px 0;
+	text-align: center;
+	letter-spacing: 10px;
+}
+.title1{
+	color: lightsteelblue;
+	text-align: center;
+	padding: 0 15px;
+	margin-bottom: 25px;
+}
+#about, #tour, #contact{
+	max-width: 800px;
+	margin: 0 auto;
+	/* margin-bottom: 30px; */
+	padding-top: 64px;
+	padding-bottom: 64px;
+}
+#about > .document{
+	text-align:justify;
+}
+#about > .images{
+	display: flex;	
+	margin: 32px 0;
+
+}
+#about > .name{
+	width: 30%;
+	margin: 0 auto;
+}
+#about > .images > .name > p{
+	text-align: center;
+	margin-bottom: 15px;
+	font-family: cursive;
+
+}
+#about > .images > .name > img{
+	width: 60%;
+	margin: 0 auto 16px auto;
+	display: flex;
+}
+#all_tour{
+	width: 100%;
+	background-color: black;
+	color:#fff;
+	
+	padding-bottom: 64px;
+}
+/* #tour{
+	max-width: 800px;
+	margin: 32px auto;
+
+} */
+#tour > .title{
+	color: #fff;
+}
+#content_tour{
+	margin-top: 30px;
+
+}
+#content_tour > ul > li{
+	color: black;
+	list-style-type: none;
+	background-color: #fff;
+	border: solid #ccc 1px;
+	padding: 8px 16px;
+}
+#content_tour > ul > li > span{
+	background-color:tomato;
+	margin-left: 15px;
+	padding: 2px 8px;
+
+}
+#content_tour > ul > li > #number{
+	float: right;
+	background-color: black;
+	color: #fff;
+	border-radius: 50%;
+}
+#content1_tour{
+	display: flex;
+	justify-content: space-evenly;
+	padding: 32px 0;
+	
+}
+#content1_tour > .images{
+	width: 33.333%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 0 8px;
+}
+#content1_tour > .images > img{
+	width:100%;
+}
+.container{
+	padding: 0 32px;
+	color: black;
+	background-color: #fff;
+}
+.container > p,
+.container > h4{
+	padding: 10px 0;
+}
+.container > button{
+	padding: 5px 10px;
+    background-color: black;
+    color: #fff;
+	margin-bottom: 10px;
+}
+.container > button:hover{
+	background-color: red;
+	margin-top: 100px;
+}
+/* #contact{
+	max-width: 800px;
+	padding-bottom: 64px;
+	padding-top: 64px;
+
+} */
+#content_contact{
+	display: flex;
+	justify-content: space-between;
+	padding-bottom: 32px;
+	padding-top: 32px;
+
+}
+#contact_left{
+	list-style-type: none;
+	width: 50%;
+}
+.contact_left__icon{
+	padding-right: 10px;
+}
+#contact_right{
+	width: 50%;
+}
+input{
+	padding: 10px;
+}
+#right_top{
+	display: flex;
+	justify-content: space-between;
+}
+#right_top > input{
+	margin-bottom: 8px;
+}
+#right_bottom > input{
+	width: 100%;
+}
+#right_bottom > button{
+	float: right;
+	padding: 8px 15px;
+	margin-top: 10px;
+	background-color: black;
+	color: #fff;
+}
+#right_bottom > button:hover + #contact_right{
+	float: left;
+}
+#image > img{
+	width: 100%;	
+}
+#footer{
+	text-align: center;
+	padding-top: 64px;
+	padding-bottom: 64px;
+}
+#footer > p{
+	color: darkgray;
+	display: inline-block;
+}
+#footer > p > a{
+	text-decoration: none;
+	font-size: 30px;
+	border-radius: 20%;
+	background-color: fuchsia;
+	padding: 5px 8px;
+	
+}
+#footer > .icon{
+	padding-top: 15px;
+
+}
+#footer > .icon > a{
+	text-decoration: none;
+}
+.icon__app{
+	font-size: 23px;
+}
