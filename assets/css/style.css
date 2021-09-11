@@ -97,9 +97,10 @@ html{
 	padding: 0 16px;
 }
 
-#slider{
-	}
-#slider > #content > img{
+/* end nav */
+
+
+#content > img{
 	width: 100%;
 }
 #text{
@@ -109,20 +110,21 @@ html{
 	top: -100px;
 	display:inline;
 
-}		
-#content{
-	
 }
+
+
 .title{
 	padding: 10px 0;
 	text-align: center;
 	letter-spacing: 10px;
+	font-weight: 500 ;
 }
-.title1{
+.sub-title{
 	color: lightsteelblue;
 	text-align: center;
 	padding: 0 15px;
 	margin-bottom: 25px;
+	opacity: 0.6;      /* làm mờ chữ */            
 }
 #about, #tour, #contact{
 	max-width: 800px;
@@ -162,7 +164,6 @@ html{
 	padding-bottom: 64px;
 }
 /* #tour{
-	max-width: 800px;
 	margin: 32px auto;
 
 } */
@@ -192,20 +193,20 @@ html{
 	color: #fff;
 	border-radius: 50%;
 }
-#content1_tour{
+.places-list{
 	display: flex;
 	justify-content: space-evenly;
 	padding: 32px 0;
 	
 }
-#content1_tour > .images{
+.places-list > .places-item{
 	width: 33.333%;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	padding: 0 8px;
 }
-#content1_tour > .images > img{
+.places-list > .places-item > img{
 	width:100%;
 }
 .container{
@@ -217,65 +218,72 @@ html{
 .container > h4{
 	padding: 10px 0;
 }
-.container > button{
+/* .container > button{
 	padding: 5px 10px;
     background-color: black;
     color: #fff;
-	margin-bottom: 10px;
-}
+	border: none;
+} */
 .container > button:hover{
-	background-color: red;
-	margin-top: 100px;
+	background-color: goldenrod;
 }
+
 /* #contact{
 	max-width: 800px;
 	padding-bottom: 64px;
 	padding-top: 64px;
 
 } */
-#content_contact{
+.content-contact{
 	display: flex;
 	justify-content: space-between;
 	padding-bottom: 32px;
 	padding-top: 32px;
 
 }
-#contact_left{
+.contact-left{
 	list-style-type: none;
 	width: 50%;
 }
-.contact_left__icon{
+.contact-left-icon{
 	padding-right: 10px;
 }
-#contact_right{
+.contact-right{
 	width: 50%;
 }
 input{
 	padding: 10px;
 }
-#right_top{
+.contact-right-top{
 	display: flex;
 	justify-content: space-between;
 }
-#right_top > input{
+.contact-right-top > input{
 	margin-bottom: 8px;
 }
-#right_bottom > input{
+.contact-right-bottom > input{
 	width: 100%;
 }
-#right_bottom > button{
-	float: right;
+.btn{
+	float: left;
 	padding: 8px 15px;
 	margin-top: 10px;
 	background-color: black;
 	color: #fff;
+	border: none;
+	margin-bottom: 10px;
 }
-#right_bottom > button:hover + #contact_right{
-	float: left;
+.pull-right{
+	float: right !important;
 }
-#image > img{
+.btn:hover {
+	cursor: pointer;
+	background-color: green;
+}
+.map-section > img{
 	width: 100%;	
 }
+
 #footer{
 	text-align: center;
 	padding-top: 64px;
@@ -302,4 +310,83 @@ input{
 }
 .icon__app{
 	font-size: 23px;
+}
+
+.modal {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgb(0, 0, 0, 0.3);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	display: none;
+}
+.modal.open{
+	display: flex;
+}
+.modal .modal-container{
+	width: 600px;
+	position: relative;
+	animation: modalFadeIn ease .4s;
+	
+}
+.modal-container .modal-header{
+	width: 100%;
+}
+.modal-title{
+	padding: 32px 16px;
+	font-size: 30px;
+}
+.modal-close{
+	font-size: 30px;
+	position: absolute;
+	right: 0;
+	top: 0;
+	line-height: 6px;
+}
+.modal-close:hover{
+	background-color: red;
+}
+.modal-body{
+	background-color: #fff;
+	display: flex;
+	flex-direction: column;
+	padding: 0 16px;
+}
+.modal-lable{
+	margin: 15px 0;
+}
+.modal-pay{
+	margin: 16px 0;
+	padding: 16px;
+}
+.modal-pay:hover{
+	background-color: salmon;
+}
+.modal-help{
+	margin: 15px 0;
+}
+/* important */
+.color-white{
+	color:#ccc ;
+}
+.b-color-green{
+	background-color: #009688 ;
+}
+.text-align-center{
+	text-align: center ;
+}
+
+@keyframes modalFadeIn {
+	from {
+		transform: translateY(-150px);
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
 }

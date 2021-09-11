@@ -1,9 +1,11 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title> HTML 1 </title>
+		<title> The Band Of Dogs </title>
 		<link rel="stylesheet" type="text/css" href="./assets/css/style.css">
 		<link rel="stylesheet" type="text/css" href="./assets/themify-icons/themify-icons.css">
+		<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+		<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 	</head>
 <body>
 	<div class="main">
@@ -25,7 +27,8 @@
 			<i class="seach-btn ti-search" ></i>	
 		</div>
 <!-- end header		 -->
-	<div id="slider">
+
+<!-- content -->
 		<div id="content">
 			<img src="./assets/image/image.jpg"/>
 			<div id="text">
@@ -36,7 +39,7 @@
 			</div>
 			<div id="about">
 				<h1 class="title">THE BAND</h1>
-				<p class="title1"><i>We love music</i></p>
+				<p class="sub-title"><i>We love music</i></p>
 				<p class="document">We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod or incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 				<div class="images">
 					<div class="name">
@@ -53,84 +56,92 @@
 					</div>
 				</div>
 			</div>
+			<!-- end content -->
+			
+			<!-- tour -->
+
 			<div id="all_tour">
 				<div id="tour">	
 					<h1 class="title"> TOUR DATES</h1>
-					<p  class="title1"><i>Remember to book your tickets!</i></p>
+					<p  class="sub-title"><i>Remember to book your tickets!</i></p>
 					<div id="content_tour">
 						<ul>
 							<li>September<span> Sold out </span></li>
 							<li>October <span> Sold out </span></li>
 							<li>November<span id="number">3</span></li>
 						</ul>
-						<div id="content1_tour">
-							<div class="images">
+						<div class="places-list">
+							<div class="places-item">
 								<img src="https://www.w3schools.com/w3images/paris.jpg" alt="images">
 								<div class="container">
 									<h4>new york</h4>
 									<p class="day">Fri 27 Nov 2016</p>
 									<p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-									<button>Buy Tickets</button>
+									<button class="js-buy-ticket btn">Buy Tickets</button>
 								</div>
 							</div>
-							<div class="images">
+							<div class="places-item">
 								<img src="https://www.w3schools.com/w3images/paris.jpg" alt="images">
 								<div class="container">
 									<h4>new york</h4>
 									<p class="day">Fri 27 Nov 2016</p>
 									<p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-									<button>Buy Tickets</button>
+									<button class="js-buy-ticket btn">Buy Tickets</button>
 								</div>
 							</div>
-							<div class="images">
+							<div class="places-item">
 								<img src="https://www.w3schools.com/w3images/paris.jpg" alt="images">
 								<div class="container">
 									<h4>new york</h4>
 									<p class="day">Fri 27 Nov 2016</p>
 									<p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-									<button>Buy Tickets</button>
+									<button class="js-buy-ticket btn">Buy Tickets</button>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>	
 			</div>
+			
+			<!-- end tour -->
+			<!-- contact -->
+			
 			<div id="contact">
 				<h1 class="title"> CONTACT </h1>
-				<p class="title1"><i>Fan? Drop a note!</i></p>
-				<div id="content_contact">
-					<ul id="contact_left">
+				<p class="sub-title"><i>Fan? Drop a note!</i></p>
+				<div class="content-contact">
+					<ul class="contact-left">
 						<li>
 							<p>
-								<i class="contact_left__icon ti-home"></i>hicago, US
+								<i class="contact-left-icon ti-home"></i>hicago, US
 							</p>
 						</li>
 						<li>
 							<p>
-								<i class="contact_left__icon ti-headphone-alt"></i>hone: +00 151515
+								<i class="contact-left-icon ti-headphone-alt"></i>hone: +00 151515
 							</p>
 						</li>
 						<li>
 							<p>
-								<i class="contact_left__icon ti-email"></i>Email: mail@mail.com
+								<i class="contact-left-icon ti-email"></i>Email: mail@mail.com
 							</p>
 						</li>
 					</ul>
-					<div id="contact_right">
-						<div id="right_top">
+					<div class="contact-right">
+						<div class="contact-right-top">
 							<input type="text" placeholder="Name">
 							<input type="text" placeholder="Name">
 						</div>
-						<div id="right_bottom">
+						<div class="contact-right-bottom">
 							<input type="text" placeholder="Message">
-							<button>SEND</button>
+							<button class="btn pull-right">SEND</button>
 						</div>
 					</div>
 				</div>	
 			</div>
-			<div id="image">
-				<img src="https://www.w3schools.com/w3images/map.jpg" alt="image">
-			</div>
+		</div>
+		<div class="map-section">
+			<img src="https://www.w3schools.com/w3images/map.jpg" alt="image">
 		</div>
 		<div id="footer">
 			<p><a href="https://www.facebook.com/vanquy.03">Contact</a></p>
@@ -142,7 +153,89 @@
 				<i class="icon__app ti-linkedin"></i>
 				<i class="icon__app ti-twitter"></i>
 			</div>
+		</div>	
+	</div>
+	
+	<!--end contact  and footer-->
+	
+	<!-- ticketModal -->
+
+	<div class="modal js-modal">
+		<div class="modal-container js-modal-container">
+			<header class="modal-header color-white b-color-green">
+				<h2 class="modal-title text-align-center">
+					<ion-icon name="bag-handle-outline"></ion-icon>
+					Tickets
+				</h2>
+				<div class="modal-close js-modal-close">
+					<ion-icon name="close-outline"></ion-icon>
+				</div>
+			</header>
+			<div class="modal-body">
+				<label for="" class="modal-lable">
+					<ion-icon name="cart-outline"></ion-icon>
+					<span>Ticket, $15 per person</span>
+				</label>					
+				<input type="text" placeholder="How many?" class="modal-input">
+				<label for="" class="modal-lable">
+					<ion-icon name="person-circle-outline"></ion-icon>
+					<span>Send To</span>
+				</label>
+				<input type="email" class="modal-input" placeholder="Enter email">
+				<div class="modal-pay js-modal-pay text-align-center color-white b-color-green ">
+					PAY
+					<ion-icon name="checkmark-sharp"></ion-icon>
+				</div>
+				<div class="modal-help">
+					<p>need <a href="#">help?</a></p>
+				</div>
+			</div>
 		</div>
-	</div>	
+	</div>
+
+	<!-- end modal-->
+	<script>
+		// gán
+		const buyBtns = document.querySelectorAll('.js-buy-ticket')
+		const modal = document.querySelector('.js-modal')
+		const modalContainer = document.querySelector('.js-modal-container')
+		const modalClose = document.querySelector('.js-modal-close') 		
+		const modalPay = document.querySelector('.js-modal-pay')
+		
+		// hàm hiên thị
+		function showBuyTickets() {
+			modal.classList.add('open')
+		}
+
+		// hàm ẩn
+		function hideBuyTickets() {
+			modal.classList.remove('open')
+		}
+
+		function endTickets() {
+			modal.classList.remove('open')
+			alert("You don't monney :)) ")
+		}
+
+		// lặp qua từng thẻ và nghe hành vi click
+		
+		for ( const buyBtn of buyBtns) {
+			buyBtn.addEventListener('click', showBuyTickets)
+		}
+
+		// nghe hành vi click
+		modalClose.addEventListener('click', hideBuyTickets)
+
+		modal.addEventListener('click', hideBuyTickets)
+
+		modalContainer.addEventListener('click', function(event) {
+			event.stopPropagation()
+		})
+
+		modalPay.addEventListener('click', hideBuyTickets)
+		modalPay.addEventListener('click', endTickets)
+
+	
+	</script>
 </body>
 </html>
