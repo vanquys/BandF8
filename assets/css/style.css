@@ -5,6 +5,7 @@
 }
 html{
 	font-family:helvetiva, arial, sans-serif;
+	scroll-behavior: smooth;
 }
 /*
 1 ngoài vào
@@ -389,4 +390,12 @@ input{
 		opacity: 1;
 		transform: translateY(0);
 	}
+}
+
+/* mobie < 740px */
+
+@media only screen and (max-width: 768px){
+		#header > .seach-btn{
+			float: left;
+    
 }

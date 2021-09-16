@@ -6,15 +6,18 @@
 		<link rel="stylesheet" type="text/css" href="./assets/themify-icons/themify-icons.css">
 		<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 		<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+		<script src="/javascrip/index-js.js"></script>
+		<link rel="icon" href="https://i.pinimg.com/474x/e1/b6/1f/e1b61f8c544320588d072cb8f7fab580.jpg" type="image/x-icon" />
+
 	</head>
 <body>
 	<div class="main">
 		<div id="header">
 			<ul id="nav">
 				<li><a href="">Home</a></li>
-				<li><a href="">Band</a></li>
-				<li><a href="">Tour</a></li>
-				<li><a href="">Contact</a></li>
+				<li><a href="#about">Band</a></li>
+				<li><a href="#tour">Tour</a></li>
+				<li><a href="#contact">Contact</a></li>
 				<li>
 					<a href="">More <i class="nav-arrow-down ti-angle-down"></i></a>
 					<ul class="subnav">
@@ -56,7 +59,7 @@
 					</div>
 				</div>
 			</div>
-			<!-- end content -->
+			<!-- end about -->
 			
 			<!-- tour -->
 
@@ -194,48 +197,7 @@
 	</div>
 
 	<!-- end modal-->
-	<script>
-		// gán
-		const buyBtns = document.querySelectorAll('.js-buy-ticket')
-		const modal = document.querySelector('.js-modal')
-		const modalContainer = document.querySelector('.js-modal-container')
-		const modalClose = document.querySelector('.js-modal-close') 		
-		const modalPay = document.querySelector('.js-modal-pay')
-		
-		// hàm hiên thị
-		function showBuyTickets() {
-			modal.classList.add('open')
-		}
-
-		// hàm ẩn
-		function hideBuyTickets() {
-			modal.classList.remove('open')
-		}
-
-		function endTickets() {
-			modal.classList.remove('open')
-			alert("You don't monney :)) ")
-		}
-
-		// lặp qua từng thẻ và nghe hành vi click
-		
-		for ( const buyBtn of buyBtns) {
-			buyBtn.addEventListener('click', showBuyTickets)
-		}
-
-		// nghe hành vi click
-		modalClose.addEventListener('click', hideBuyTickets)
-
-		modal.addEventListener('click', hideBuyTickets)
-
-		modalContainer.addEventListener('click', function(event) {
-			event.stopPropagation()
-		})
-
-		modalPay.addEventListener('click', hideBuyTickets)
-		modalPay.addEventListener('click', endTickets)
-
 	
-	</script>
 </body>
 </html>
+
